@@ -1,0 +1,27 @@
+name=input('enter name')
+num=input('enter number')
+ns=int(input("no.of shirts"))
+np=int(input("no.of pants"))
+no=int(input("no.of other cloths"))
+code=input("enter promo code")
+sc=ns*500
+sp=np*300
+so=no*100
+bill=sc+sp+so
+if code=="vizag": dis=bill*20/100
+elif bill>=5000: dis=bill*10/100
+elif bill>=3000: dis=bill*8/100
+elif bill>=2000: dis=bill*5/100
+tax=bill*12/100
+tbill=bill-dis+tax
+print("****welcome to ss shopping mall****")
+print('customer:',name)
+print('pho:',num)
+print('shirts:',ns,'*',500,'=',ns*500)
+print('pants:',np,'*',300,'=',ns*300)
+print('others:',no,'*',100,'=',ns*100)
+print("total:",bill)
+print("discount:",dis)
+print("tax:",tax)
+print("total amount to pay:",tbill)
+print("**thank yoy!!!vist again!!!")
